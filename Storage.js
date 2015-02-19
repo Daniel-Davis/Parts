@@ -28,3 +28,6 @@ var storage = [ // creating a storage cabinet for electronic parts with name, se
   '{ "partName": "electricMotor" : "serialNum": "N/A" : "quantity": 30 : "type": "motor" : "damage": false }'
   ].join(",/n ") + "/n]";// end of storage
   
+  if (typeof module != "undefined" && module.exports) // allows to be exported in node.js
+  module.exports = storage; // end of export
+  
